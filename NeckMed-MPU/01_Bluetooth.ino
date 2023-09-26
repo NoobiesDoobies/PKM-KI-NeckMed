@@ -1,128 +1,92 @@
-// Reference: https://randomnerdtutorials.com/esp32-bluetooth-low-energy-ble-arduino-ide/
- 
-// // BLE SECTION
-// BLEServer *pServer = NULL;
+// #include "BluetoothSerial.h"
 
-// BLECharacteristic *message_characteristic = NULL;
-// BLECharacteristic *degree_characteristic = NULL;
 
-// #define SERVICE_UUID "4fafc201-1fb5-459e-8fcc-c5c9c331914b"
-// #define DEGREE_UUID "6982c700-c237-11ec-9d64-0242ac120002"
+#include <string>
+using namespace std;
 
-// #define MESSAGE_CHARACTERISTIC_UUID "6d68efe5-04b6-4a85-abc4-c2670b7bf7fd"
+#define SERVICE_UUID        "81721cb1-d932-4846-b9f4-862e34258388"
+#define CHARACTERISTIC_UUID "beb5483e-36e1-4688-b7f5-ea07361b26a8"
 
-// bool connected = false;
 
-// class MyServerCallbacks : public BLEServerCallbacks
-// {
-//   void onConnect(BLEServer *pServer)
-//   {
-//     Serial.println("Connected");
-//     connected = true;
-//     digitalWrite(22, HIGH);
-//   };
+BLECharacteristic *pCharacteristic;
+BLEServer *pServer;
 
-//   void onDisconnect(BLEServer *pServer)
-//   {
-//     Serial.println("Disconnected");
-//     pServer->getAdvertising()->start();
-//     connected = false;
-//     digitalWrite(22, LOW);
-//   }
-// };
 
-// class CharacteristicsCallbacks : public BLECharacteristicCallbacks
-// {
-//   void onWrite(BLECharacteristic *pCharacteristic)
-//   {
-//     Serial.print("Value Written ");
-//     Serial.println(pCharacteristic->getValue().c_str());
-//   }
-// };
+bool connected = false;
 
-// void setup()
-// {
-//   Serial.begin(115200);
-//   pinMode(13, INPUT);
-//   pinMode(22, OUTPUT);
+class MyServerCallbacks : public BLEServerCallbacks
+{
+  void onConnect(BLEServer *pServer)
+  {
+    Serial.println("Connected");
+    connected = true;
+    digitalWrite(22, HIGH);
+    
+  };
 
-//   // Create the BLE Device
-//   BLEDevice::init("Spine Flex");
-//   // Create the BLE Server
-//   pServer = BLEDevice::createServer();
-//   pServer->setCallbacks(new MyServerCallbacks());
-//   // Create the BLE Service
-//   BLEService *pService = pServer->createService(SERVICE_UUID);
-//   delay(100);
+  void onDisconnect(BLEServer *pServer)
+  {
+    Serial.println("Disconnected");
+    pServer->getAdvertising()->start();
+    connected = false;
+    digitalWrite(22, LOW);
+  }
+};
 
-//   // Create a BLE Characteristic
-//   degree_characteristic = pService->createCharacteristic(
-//       DEGREE_UUID,
-//       BLECharacteristic::PROPERTY_READ |
-//           BLECharacteristic::PROPERTY_WRITE |
-//           BLECharacteristic::PROPERTY_NOTIFY |
-//           BLECharacteristic::PROPERTY_INDICATE);
-//   message_characteristic = pService->createCharacteristic(
-//       MESSAGE_CHARACTERISTIC_UUID,
-//       BLECharacteristic::PROPERTY_READ |
-//           BLECharacteristic::PROPERTY_WRITE |
-//           BLECharacteristic::PROPERTY_NOTIFY |
-//           BLECharacteristic::PROPERTY_INDICATE);
 
-//   // Start the BLE service
-//   pService->start();
+class CharacteristicsCallbacks : public BLECharacteristicCallbacks
+{
+  void onWrite(BLECharacteristic *pCharacteristic)
+  {
+    Serial.print("Value Written ");
+    Serial.println(pCharacteristic->getValue().c_str());
+    calibrateAccelerometer();
+  }
 
-//   // Start advertising
-//   pServer->getAdvertising()->start();
+	// void onRead(BLECharacteristic *pCharacteristic) {
+  //   Serial.println("READING");
+	// 	Serial.println(pCharacteristic->getValue().c_str());
+	// }
+};
 
-//   degree_characteristic->setCallbacks(new CharacteristicsCallbacks());
+void setupBLE(){
+  Serial.println("Starting BLE work!");
 
-//   message_characteristic->setValue("SAFE");
-//   message_characteristic->setCallbacks(new CharacteristicsCallbacks());
-//   Serial.println("Waiting for a client connection to notify...");
-// }
-
-// int minVal = 3000;
-// int maxVal = 0;
-
-// int duration = 0;
-// bool on = true;
-// bool aman = true;
-// int i = 0;
-// void loop()
-// {
-//   if (!connected) {
-//     delay(100);
-//     return;
-//   }
-//   int flex = analogRead(13);
-//   int degree = map(flex, 2830, 3800, 0, 90);
-//   degree = min(degree, 90);
-//   degree = max(degree, 0);
-//   if (degree >= 30) {
-//     duration += 50;
-//     if (duration >= 5000 && aman) {
-//       aman = false;
-//       message_characteristic->setValue("WARNING");
-//       message_characteristic->notify();
-//     }
-//   }
-//   else {
-//     duration = 0;
-//     if (!aman) {
-//       aman = true;
-//       message_characteristic->setValue("SAFE");
-//       message_characteristic->notify();
-//     }
-//   }
-//   if (i == 0) {
-//     char degreeStr[3];
-//     itoa(degree, degreeStr, 10);
-//     degree_characteristic->setValue(degreeStr);
-//     degree_characteristic->notify();
-//   }
+  BLEDevice::init("Neckmed-kntl");
+  pServer = BLEDevice::createServer();
+  pServer->setCallbacks(new MyServerCallbacks());
   
-//   delay(50);
-//   i++;
-//   i %= 10;
-// }
+
+  BLEService *pService = pServer->createService(SERVICE_UUID);
+  pCharacteristic = pService->createCharacteristic(
+                                         CHARACTERISTIC_UUID,
+                                         BLECharacteristic::PROPERTY_READ |
+                                         BLECharacteristic::PROPERTY_WRITE |
+                                         BLECharacteristic::PROPERTY_NOTIFY
+                                       );
+
+  pCharacteristic->setCallbacks(new CharacteristicsCallbacks());
+  pService->start();
+  // BLEAdvertising *pAdvertising = pServer->getAdvertising();  // this still is working for backward compatibility
+  BLEAdvertising *pAdvertising = BLEDevice::getAdvertising();
+  pAdvertising->addServiceUUID(SERVICE_UUID);
+  pAdvertising->setScanResponse(true);
+  pAdvertising->setMinPreferred(0x06);  // functions that help with iPhone connections issue
+  pAdvertising->setMinPreferred(0x12);
+  BLEDevice::startAdvertising();
+  Serial.println("Characteristic defined! Now you can read it in your phone!");
+}
+
+
+// leher ke depan minimal 14
+// 
+
+void sendData(){
+  // string data = std::format("Pitch: {}\tRoll: {}", pitch, roll);
+  // Serial.println("data: " + data);
+  string data = to_string(pitch) + " " + to_string(roll);
+  // Serial.println(data.c_str());
+  // pCharacteristic->setValue("neckmed-gblg");
+  pCharacteristic->setValue(data);
+  pCharacteristic->notify();
+}
