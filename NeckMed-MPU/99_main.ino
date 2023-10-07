@@ -26,20 +26,41 @@ void setup(void) {
   setupBLE();
 } 
 
-
-
-
 void loop() {
 
-  /* Get new sensor events with the readings */
-  mpu.getEvent(&a, &g, &temp);
+  pitch = getPitch();
+  roll = getRoll();
 
-  pitch = convertAccelerationToPitch(a.acceleration) - pitchOffset;
-  roll = convertAccelerationToRoll(a.acceleration) - rollOffset;
-  Serial.println("Pitch: " + String(pitch) + "\tRoll: " + String(roll));
-  if(connected){
-    sendData();
+  switch(neck_state){
+    case SAFE_STATE:
+      if(roll > dangerousNeckAngle){
+        danger_timer_start = millis(); // in ms
+        neck_state = DANGEROUS_STATE;
+      }
+      break;
+    case INTERMEDIATE_STATE:
+      if(roll > dangerousNeckAngle){
+        neck_state = DANGEROUS_STATE;
+      }
+      if(millis() - stretch_timer_start > MINIMAL_STRETCH_DURATION){
+        neck_state = SAFE_STATE;
+        danger_duration = 0;
+      }
+      break;
+    case DANGEROUS_STATE:
+        // Serial.println("danger");
+        danger_duration = (float)(millis() - danger_timer_start)/1000.0; // in ms
+        if(roll < dangerousNeckAngle){
+          neck_state = INTERMEDIATE_STATE;
+          stretch_timer_start = millis();
+        }
+      break;
   }
 
-  delay(500);
+  if(connected){
+    sendData();
+    sendStateAndDurationData();
+  }
+
+  delay(50);
 }

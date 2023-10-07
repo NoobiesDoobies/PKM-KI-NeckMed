@@ -1,6 +1,3 @@
-
-
-
 void setupMPU(){
     Serial.println("Adafruit MPU6050 test!");
 
@@ -75,4 +72,21 @@ void setupMPU(){
   Serial.println("");
   delay(100);
 
+}
+
+float getPitch(){
+  /* Get new sensor events with the readings */
+  mpu.getEvent(&a, &g, &temp);
+ 
+  float tempPitch = convertAccelerationToPitch(a.acceleration) - pitchOffset;
+  // Serial.println("Pitch from function" + String(tempPitch));
+
+  return tempPitch;
+}
+
+
+
+float getRoll(){
+  mpu.getEvent(&a, &g, &temp);
+  return convertAccelerationToRoll(a.acceleration) - rollOffset;
 }

@@ -24,6 +24,15 @@ float pitchOffset = 0.0;
 /* Get new sensor events with the readings */
 sensors_event_t a, g, temp;
 
+const int dangerousNeckAngle = 30;
+
+
+enum Neck_State{SAFE_STATE, INTERMEDIATE_STATE, DANGEROUS_STATE};
+int neck_state = SAFE_STATE;
+int danger_timer_start = 0;
+float danger_duration = 0;
+const int MINIMAL_STRETCH_DURATION = 3*1000; // in ms
+int stretch_timer_start = 0;
 
 float convertAccelerationToPitch(sensors_vec_t accel){
   // Calculate pitch and roll angles from accelerometer data
@@ -45,7 +54,6 @@ float convertAccelerationToRoll(sensors_vec_t accel){
   float accelZ = accel.z;
   float Roll = atan2(accelY, accelZ);
   Roll = Roll*180/M_PI;
-  Serial.println("KNTL2: " + String(Roll));
   delay(100);
   return Roll;
 }
@@ -56,5 +64,13 @@ void calibrateAccelerometer() {
   pitchOffset = convertAccelerationToPitch(a.acceleration);
   rollOffset  = convertAccelerationToRoll(a.acceleration);
   Serial.println("pitchOffset: " + String(pitchOffset) + "\trollOffset: " + String(rollOffset));
+}
+
+
+float abs_float(float n){
+  if(n < 0){
+    return -n;
+  }
+  return n;
 }
 
