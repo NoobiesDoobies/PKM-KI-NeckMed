@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.0">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -134,10 +134,11 @@
 <layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <board>
+<fusionsync huburn="a.YnVzaW5lc3M6bWFoYXNpc3dhNDI0" projecturn="a.YnVzaW5lc3M6bWFoYXNpc3dhNDI0I0QyMDIyMTIxNDU4OTAwODgzMQ" f3durn="urn:adsk.wipprod:dm.lineage:mptlwWZJTQq1JSAAdiRYng" pcbguid="c5accfe9-1a98-4ea8-9af5-e8e8a85277e3" lastpulledtime="" lastsyncedchangeguid="" latestrevisionid="5b2103bc-0762-4bcf-a85a-d7a906a362f9" lastsyncedrevisionid="5b2103bc-0762-4bcf-a85a-d7a906a362f9" lastboardhashguid="dbe06386-3e40-a520-d5e2-8091020fd13d" lastpushedtime="2023-11-15T14:38:15Z" linktopcb3d="false"/>
 <plain>
-<wire x1="0" y1="-0.2" x2="40" y2="-0.2" width="0" layer="20"/>
-<wire x1="40" y1="-0.2" x2="40" y2="22" width="0" layer="20"/>
-<wire x1="40" y1="22" x2="0" y2="22" width="0" layer="20"/>
+<wire x1="0" y1="-0.2" x2="53" y2="-0.2" width="0" layer="20"/>
+<wire x1="53" y1="-0.2" x2="53" y2="22" width="0" layer="20"/>
+<wire x1="53" y1="22" x2="0" y2="22" width="0" layer="20"/>
 <wire x1="0" y1="22" x2="0" y2="-0.2" width="0" layer="20"/>
 <dimension x1="0" y1="-1" x2="45" y2="-1" x3="22.5" y3="-3" textsize="1.778" layer="1"/>
 <dimension x1="0" y1="-1" x2="44" y2="-1" x3="22" y3="-8" textsize="1.778" layer="1"/>
@@ -1320,30 +1321,6 @@ grid 2.5 mm, outline 4 x 5 mm</description>
 </package3d>
 </packages3d>
 </library>
-<library name="B2B-XH-A">
-<packages>
-<package name="JST_B2B-XH-A">
-<wire x1="3.7" y1="2.875" x2="3.7" y2="-2.875" width="0.127" layer="51"/>
-<wire x1="3.7" y1="-2.875" x2="-3.7" y2="-2.875" width="0.127" layer="51"/>
-<wire x1="-3.7" y1="-2.875" x2="-3.7" y2="2.875" width="0.127" layer="51"/>
-<wire x1="-3.7" y1="2.875" x2="3.7" y2="2.875" width="0.127" layer="51"/>
-<circle x="4.44" y="-0.525" radius="0.1" width="0.2" layer="51"/>
-<wire x1="3.7" y1="2.875" x2="3.7" y2="-2.875" width="0.127" layer="21"/>
-<wire x1="3.7" y1="-2.875" x2="-3.7" y2="-2.875" width="0.127" layer="21"/>
-<wire x1="-3.7" y1="-2.875" x2="-3.7" y2="2.875" width="0.127" layer="21"/>
-<wire x1="-3.7" y1="2.875" x2="3.7" y2="2.875" width="0.127" layer="21"/>
-<wire x1="-3.95" y1="3.125" x2="-3.95" y2="-3.125" width="0.05" layer="39"/>
-<wire x1="-3.95" y1="-3.125" x2="3.95" y2="-3.125" width="0.05" layer="39"/>
-<wire x1="3.95" y1="-3.125" x2="3.95" y2="3.125" width="0.05" layer="39"/>
-<wire x1="3.95" y1="3.125" x2="-3.95" y2="3.125" width="0.05" layer="39"/>
-<circle x="4.44" y="-0.525" radius="0.1" width="0.2" layer="21"/>
-<text x="-3.95" y="4.125" size="1.27" layer="25">&gt;NAME</text>
-<text x="-3.95" y="-4.125" size="1.27" layer="27" align="top-left">&gt;VALUE</text>
-<pad name="2" x="-1.25" y="-0.525" drill="1.05"/>
-<pad name="1" x="1.25" y="-0.525" drill="1.05" shape="square"/>
-</package>
-</packages>
-</library>
 <library name="MCP1703T-3302E_CB">
 <packages>
 <package name="SOT95P255X145-3N">
@@ -1366,6 +1343,24 @@ grid 2.5 mm, outline 4 x 5 mm</description>
 <smd name="1" x="-1.165" y="0.95" dx="1.38" dy="0.6" layer="1" roundness="25"/>
 <smd name="2" x="-1.165" y="-0.95" dx="1.38" dy="0.6" layer="1" roundness="25"/>
 <smd name="3" x="1.165" y="0" dx="1.38" dy="0.6" layer="1" roundness="25"/>
+</package>
+</packages>
+</library>
+<library name="con-JST-SH">
+<packages>
+<package name="SM02B-SRSS-TB">
+<description>JST-SH (1.25mm) 5-pin surface-mount right-angle Wire-Board Connector</description>
+<smd name="M1" x="1.8" y="0" dx="1.2" dy="1.8" layer="1"/>
+<smd name="M2" x="-1.8" y="0" dx="1.2" dy="1.8" layer="1"/>
+<smd name="1" x="-0.5" y="4.675" dx="0.6" dy="1.55" layer="1"/>
+<smd name="2" x="0.5" y="4.675" dx="0.6" dy="1.55" layer="1"/>
+<wire x1="-2" y1="-0.5" x2="2" y2="-0.5" width="0.127" layer="21"/>
+<wire x1="2" y1="-0.5" x2="2" y2="4.25" width="0.127" layer="21"/>
+<wire x1="2" y1="4.25" x2="-2" y2="4.25" width="0.127" layer="21"/>
+<wire x1="-2" y1="4.25" x2="-2" y2="-0.5" width="0.127" layer="21"/>
+<text x="0" y="6" size="0.6" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<rectangle x1="-2.25" y1="-1" x2="2.25" y2="4.5" layer="39"/>
+<rectangle x1="-2.5" y1="-6" x2="2.5" y2="-1" layer="39"/>
 </package>
 </packages>
 </library>
@@ -1596,19 +1591,6 @@ design rules under a new name.</description>
 <attribute name="SPICEPREFIX" value="C" x="34" y="19.5" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="31.714" y="16.071" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="SWITCH" library="B2B-XH-A" package="JST_B2B-XH-A" value="B2B-XH-A" x="35" y="13" smashed="yes" rot="MR180">
-<attribute name="AVAILABILITY" value="In Stock" x="35" y="13" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/B2B-XH-A/JST+Sales+America+Inc./view-part/?ref=eda" x="35" y="13" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="DESCRIPTION" value=" Connector Header Through Hole 2 position 0.098 (2.50mm) " x="35" y="13" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="MF" value="JST Sales" x="35" y="13" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="MP" value="B2B-XH-A" x="35" y="13" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="NAME" x="31.05" y="8.875" size="1.27" layer="26" rot="MR180"/>
-<attribute name="PACKAGE" value="None" x="35" y="13" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="PRICE" value="None" x="35" y="13" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="PURCHASE-URL" value="https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=552747&amp;manufacturer=JST Sales&amp;part_name=B2B-XH-A&amp;search_term=jwt xh" x="35" y="13" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/B2B-XH-A/JST+Sales+America+Inc./view-part/?ref=snap" x="35" y="13" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="VALUE" x="31.05" y="17.125" size="1.27" layer="28" rot="MR180" align="top-left"/>
-</element>
 <element name="MCP" library="MCP1703T-3302E_CB" package="SOT95P255X145-3N" value="MCP1703T-3302E/CB" x="34" y="8" smashed="yes" rot="MR0">
 <attribute name="AVAILABILITY" value="In Stock" x="34" y="8" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/MCP1703T-3302E/CB/Microchip/view-part/?ref=eda" x="34" y="8" size="1.778" layer="28" rot="MR0" display="off"/>
@@ -1622,16 +1604,21 @@ design rules under a new name.</description>
 <attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/MCP1703T-3302E/CB/Microchip/view-part/?ref=snap" x="34" y="8" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="VALUE" x="37" y="6" size="1.27" layer="28" ratio="10" rot="SMR0" align="top-left"/>
 </element>
+<element name="J1" library="con-JST-SH" package="SM02B-SRSS-TB" value="SM02B-SRSS-TB" x="-17" y="-7" smashed="yes">
+<attribute name="MF" value="JST" x="-17" y="-7" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="SM02B-SRSS-TB" x="-17" y="-7" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-17" y="-1" size="0.6" layer="25" font="vector" ratio="15" align="center"/>
+</element>
 </elements>
 <signals>
 <signal name="N$5">
 <contactref element="C1" pad="1"/>
-<contactref element="SWITCH" pad="2"/>
 <contactref element="MCP" pad="3"/>
 <wire x1="32.835" y1="8" x2="32.835" y2="5.935" width="0.254" layer="16"/>
 <wire x1="32.835" y1="5.935" x2="34" y2="4.77" width="0.254" layer="16"/>
 <wire x1="32.835" y1="8" x2="32.835" y2="12.61" width="0.254" layer="16"/>
-<wire x1="32.835" y1="12.61" x2="33.75" y2="13.525" width="0.254" layer="16"/>
+<contactref element="J1" pad="1"/>
+<wire x1="-17.5" y1="-2.325" x2="32.835" y2="8" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="VCC">
 <contactref element="C2" pad="1"/>
@@ -1658,7 +1645,6 @@ design rules under a new name.</description>
 <contactref element="C1" pad="2"/>
 <contactref element="ESP" pad="38"/>
 <contactref element="GY" pad="GND"/>
-<contactref element="SWITCH" pad="1"/>
 <contactref element="MCP" pad="1"/>
 <wire x1="31.77" y1="2.23" x2="34" y2="2.23" width="0.254" layer="16"/>
 <wire x1="24.943" y1="0.943" x2="27.38" y2="3.38" width="0.254" layer="16"/>
@@ -1668,9 +1654,7 @@ design rules under a new name.</description>
 <wire x1="8.8831875" y1="0.943" x2="24.943" y2="0.943" width="0.254" layer="16"/>
 <wire x1="34" y1="2.23" x2="34.525" y2="2.23" width="0.254" layer="16"/>
 <wire x1="35.27" y1="19.5" x2="35.27" y2="14.505" width="0.254" layer="16"/>
-<wire x1="35.27" y1="14.505" x2="36.25" y2="13.525" width="0.254" layer="16"/>
 <wire x1="35.165" y1="8.95" x2="35.165" y2="12.44" width="0.254" layer="16"/>
-<wire x1="35.165" y1="12.44" x2="36.25" y2="13.525" width="0.254" layer="16"/>
 <wire x1="34.525" y1="2.23" x2="36" y2="3.705" width="0.254" layer="16"/>
 <wire x1="36" y1="3.705" x2="36" y2="4.73011875" width="0.254" layer="16"/>
 <wire x1="34.094" y1="6.63611875" x2="34.094" y2="7.46388125" width="0.254" layer="16"/>
@@ -1678,9 +1662,12 @@ design rules under a new name.</description>
 <wire x1="34.094" y1="7.46388125" x2="35.165" y2="8.53488125" width="0.254" layer="16"/>
 <wire x1="35.165" y1="8.53488125" x2="35.165" y2="8.95" width="0.254" layer="16"/>
 <wire x1="28.89" y1="17.35" x2="32.425" y2="17.35" width="0.254" layer="16"/>
-<wire x1="32.425" y1="17.35" x2="36.25" y2="13.525" width="0.254" layer="16"/>
 <wire x1="27.38" y1="3.38" x2="30.62" y2="3.38" width="0.254" layer="16"/>
 <wire x1="30.62" y1="3.38" x2="31.77" y2="2.23" width="0.254" layer="16"/>
+<contactref element="J1" pad="2"/>
+<wire x1="35.165" y1="12.44" x2="35.27" y2="14.505" width="0" layer="19" extent="16-16"/>
+<wire x1="32.425" y1="17.35" x2="35.27" y2="19.5" width="0" layer="19" extent="16-16"/>
+<wire x1="-16.5" y1="-2.325" x2="7.745" y2="2.55" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="N$8">
 <contactref element="ESP" pad="36"/>
@@ -1725,6 +1712,11 @@ design rules under a new name.</description>
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
 with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports Fusion synchronisation.
+This feature will not be available in this version and saving
+the document will break the link to the Fusion PCB feature.
 </note>
 <note version="8.3" severity="warning">
 Since Version 8.3, EAGLE supports URNs for individual library

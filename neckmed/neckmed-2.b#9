@@ -134,15 +134,16 @@
 <layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <board>
-<fusionsync huburn="a.YnVzaW5lc3M6bWFoYXNpc3dhNDI0" projecturn="a.YnVzaW5lc3M6bWFoYXNpc3dhNDI0I0QyMDIyMTIxNDU4OTAwODgzMQ" f3durn="urn:adsk.wipprod:dm.lineage:qi3mbQcIQFSmyp5isWzNxg" pcbguid="" lastpulledtime="" lastsyncedchangeguid="" latestrevisionid="9f411598-edeb-4f76-8329-f9c7b0f15b80" lastsyncedrevisionid="9f411598-edeb-4f76-8329-f9c7b0f15b80" lastboardhashguid="d8da99db-4879-82d0-54d7-5b67d01daae9" lastpushedtime="2023-11-15T13:02:59Z" linktopcb3d="%12"/>
+<fusionsync huburn="a.YnVzaW5lc3M6bWFoYXNpc3dhNDI0" projecturn="a.YnVzaW5lc3M6bWFoYXNpc3dhNDI0I0QyMDIyMTIxNDU4OTAwODgzMQ" f3durn="urn:adsk.wipprod:dm.lineage:s_8yLmecT-2ugsfzPMyUxg" pcbguid="fd289bad-12c4-4f16-9f90-df52e0faa567" lastpulledtime="" lastsyncedchangeguid="" latestrevisionid="01bb5a2a-b07b-4218-a561-a0ef2de3268c" lastsyncedrevisionid="01bb5a2a-b07b-4218-a561-a0ef2de3268c" lastboardhashguid="09b660f1-573d-19c6-ea59-9cd1210d6200" lastpushedtime="2023-11-15T13:44:24Z" linktopcb3d="%12"/>
 <plain>
-<wire x1="0" y1="-0.2" x2="39" y2="-0.2" width="0" layer="20"/>
-<wire x1="39" y1="-0.2" x2="39" y2="22" width="0" layer="20"/>
-<wire x1="39" y1="22" x2="0" y2="22" width="0" layer="20"/>
+<wire x1="0" y1="-0.2" x2="40" y2="-0.2" width="0" layer="20"/>
+<wire x1="40" y1="-0.2" x2="40" y2="22" width="0" layer="20"/>
+<wire x1="40" y1="22" x2="0" y2="22" width="0" layer="20"/>
 <wire x1="0" y1="22" x2="0" y2="-0.2" width="0" layer="20"/>
 <dimension x1="0" y1="-1" x2="45" y2="-1" x3="22.5" y3="-3" textsize="1.778" layer="1"/>
 <dimension x1="0" y1="-1" x2="44" y2="-1" x3="22" y3="-8" textsize="1.778" layer="1"/>
 <dimension x1="0" y1="22" x2="0" y2="-0.2" x3="-11" y3="10.9" textsize="1.778" layer="1"/>
+<dimension x1="0" y1="-0.2" x2="39" y2="0" x3="19.556171875" y3="-11.053559375" textsize="1.778" layer="1"/>
 </plain>
 <libraries>
 <library name="ESP32-WROOM-32E">
@@ -1595,18 +1596,18 @@ design rules under a new name.</description>
 <attribute name="SPICEPREFIX" value="C" x="34" y="19.5" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="31.714" y="16.071" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="SWITCH" library="B2B-XH-A" package="JST_B2B-XH-A" value="B2B-XH-A" x="34" y="13" smashed="yes" rot="MR180">
-<attribute name="AVAILABILITY" value="In Stock" x="34" y="13" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/B2B-XH-A/JST+Sales+America+Inc./view-part/?ref=eda" x="34" y="13" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="DESCRIPTION" value=" Connector Header Through Hole 2 position 0.098 (2.50mm) " x="34" y="13" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="MF" value="JST Sales" x="34" y="13" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="MP" value="B2B-XH-A" x="34" y="13" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="NAME" x="30.05" y="8.875" size="1.27" layer="26" rot="MR180"/>
-<attribute name="PACKAGE" value="None" x="34" y="13" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="PRICE" value="None" x="34" y="13" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="PURCHASE-URL" value="https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=552747&amp;manufacturer=JST Sales&amp;part_name=B2B-XH-A&amp;search_term=jwt xh" x="34" y="13" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/B2B-XH-A/JST+Sales+America+Inc./view-part/?ref=snap" x="34" y="13" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="VALUE" x="30.05" y="17.125" size="1.27" layer="28" rot="MR180" align="top-left"/>
+<element name="SWITCH" library="B2B-XH-A" package="JST_B2B-XH-A" value="B2B-XH-A" x="35" y="13" smashed="yes" rot="MR180">
+<attribute name="AVAILABILITY" value="In Stock" x="35" y="13" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/B2B-XH-A/JST+Sales+America+Inc./view-part/?ref=eda" x="35" y="13" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="DESCRIPTION" value=" Connector Header Through Hole 2 position 0.098 (2.50mm) " x="35" y="13" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MF" value="JST Sales" x="35" y="13" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MP" value="B2B-XH-A" x="35" y="13" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="NAME" x="31.05" y="8.875" size="1.27" layer="26" rot="MR180"/>
+<attribute name="PACKAGE" value="None" x="35" y="13" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="PRICE" value="None" x="35" y="13" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="PURCHASE-URL" value="https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=552747&amp;manufacturer=JST Sales&amp;part_name=B2B-XH-A&amp;search_term=jwt xh" x="35" y="13" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/B2B-XH-A/JST+Sales+America+Inc./view-part/?ref=snap" x="35" y="13" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="VALUE" x="31.05" y="17.125" size="1.27" layer="28" rot="MR180" align="top-left"/>
 </element>
 <element name="U3" library="MCP1703T-3302E_CB" package="SOT95P255X145-3N" value="MCP1703T-3302E/CB" x="34" y="8" smashed="yes" rot="MR0">
 <attribute name="AVAILABILITY" value="In Stock" x="34" y="8" size="1.778" layer="28" rot="MR0" display="off"/>
@@ -1629,8 +1630,8 @@ design rules under a new name.</description>
 <contactref element="U3" pad="3"/>
 <wire x1="32.835" y1="8" x2="32.835" y2="5.935" width="0.254" layer="16"/>
 <wire x1="32.835" y1="5.935" x2="34" y2="4.77" width="0.254" layer="16"/>
-<wire x1="32.835" y1="8" x2="32.835" y2="13.44" width="0.254" layer="16"/>
-<wire x1="32.835" y1="13.44" x2="32.75" y2="13.525" width="0.254" layer="16"/>
+<wire x1="32.835" y1="8" x2="32.835" y2="12.61" width="0.254" layer="16"/>
+<wire x1="32.835" y1="12.61" x2="33.75" y2="13.525" width="0.254" layer="16"/>
 </signal>
 <signal name="VCC">
 <contactref element="C2" pad="1"/>
@@ -1674,10 +1675,10 @@ design rules under a new name.</description>
 <wire x1="8" y1="2.295" x2="8" y2="1.8261875" width="0.254" layer="16"/>
 <wire x1="8.8831875" y1="0.943" x2="24.943" y2="0.943" width="0.254" layer="16"/>
 <wire x1="34" y1="2.23" x2="34.525" y2="2.23" width="0.254" layer="16"/>
-<wire x1="35.27" y1="19.5" x2="35.27" y2="13.545" width="0.254" layer="16"/>
-<wire x1="35.27" y1="13.545" x2="35.25" y2="13.525" width="0.254" layer="16"/>
-<wire x1="35.165" y1="8.95" x2="35.165" y2="13.44" width="0.254" layer="16"/>
-<wire x1="35.165" y1="13.44" x2="35.25" y2="13.525" width="0.254" layer="16"/>
+<wire x1="35.27" y1="19.5" x2="35.27" y2="14.505" width="0.254" layer="16"/>
+<wire x1="35.27" y1="14.505" x2="36.25" y2="13.525" width="0.254" layer="16"/>
+<wire x1="35.165" y1="8.95" x2="35.165" y2="12.44" width="0.254" layer="16"/>
+<wire x1="35.165" y1="12.44" x2="36.25" y2="13.525" width="0.254" layer="16"/>
 <wire x1="34.525" y1="2.23" x2="36" y2="3.705" width="0.254" layer="16"/>
 <wire x1="36" y1="3.705" x2="36" y2="4.73011875" width="0.254" layer="16"/>
 <wire x1="34.094" y1="6.63611875" x2="34.094" y2="7.46388125" width="0.254" layer="16"/>

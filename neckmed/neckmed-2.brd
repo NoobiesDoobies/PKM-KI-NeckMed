@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.0">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -134,7 +134,7 @@
 <layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <board>
-<fusionsync huburn="a.YnVzaW5lc3M6bWFoYXNpc3dhNDI0" projecturn="a.YnVzaW5lc3M6bWFoYXNpc3dhNDI0I0QyMDIyMTIxNDU4OTAwODgzMQ" f3durn="urn:adsk.wipprod:dm.lineage:mptlwWZJTQq1JSAAdiRYng" pcbguid="c5accfe9-1a98-4ea8-9af5-e8e8a85277e3" lastpulledtime="" lastsyncedchangeguid="" latestrevisionid="5b2103bc-0762-4bcf-a85a-d7a906a362f9" lastsyncedrevisionid="5b2103bc-0762-4bcf-a85a-d7a906a362f9" lastboardhashguid="dbe06386-3e40-a520-d5e2-8091020fd13d" lastpushedtime="2023-11-15T14:38:15Z" linktopcb3d="%12"/>
+<fusionsync huburn="a.YnVzaW5lc3M6bWFoYXNpc3dhNDI0" projecturn="a.YnVzaW5lc3M6bWFoYXNpc3dhNDI0I0QyMDIyMTIxNDU4OTAwODgzMQ" f3durn="urn:adsk.wipprod:dm.lineage:mptlwWZJTQq1JSAAdiRYng" pcbguid="c5accfe9-1a98-4ea8-9af5-e8e8a85277e3" lastpulledtime="" lastsyncedchangeguid="" latestrevisionid="5b2103bc-0762-4bcf-a85a-d7a906a362f9" lastsyncedrevisionid="5b2103bc-0762-4bcf-a85a-d7a906a362f9" lastboardhashguid="dbe06386-3e40-a520-d5e2-8091020fd13d" lastpushedtime="2023-11-15T14:38:15Z" linktopcb3d="false"/>
 <plain>
 <wire x1="0" y1="-0.2" x2="40" y2="-0.2" width="0" layer="20"/>
 <wire x1="40" y1="-0.2" x2="40" y2="22" width="0" layer="20"/>

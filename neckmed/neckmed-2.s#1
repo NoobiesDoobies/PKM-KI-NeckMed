@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.0">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -4824,75 +4824,6 @@ Source: AVX .. aphvc.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="B2B-XH-A">
-<packages>
-<package name="JST_B2B-XH-A">
-<wire x1="3.7" y1="2.875" x2="3.7" y2="-2.875" width="0.127" layer="51"/>
-<wire x1="3.7" y1="-2.875" x2="-3.7" y2="-2.875" width="0.127" layer="51"/>
-<wire x1="-3.7" y1="-2.875" x2="-3.7" y2="2.875" width="0.127" layer="51"/>
-<wire x1="-3.7" y1="2.875" x2="3.7" y2="2.875" width="0.127" layer="51"/>
-<circle x="4.44" y="-0.525" radius="0.1" width="0.2" layer="51"/>
-<wire x1="3.7" y1="2.875" x2="3.7" y2="-2.875" width="0.127" layer="21"/>
-<wire x1="3.7" y1="-2.875" x2="-3.7" y2="-2.875" width="0.127" layer="21"/>
-<wire x1="-3.7" y1="-2.875" x2="-3.7" y2="2.875" width="0.127" layer="21"/>
-<wire x1="-3.7" y1="2.875" x2="3.7" y2="2.875" width="0.127" layer="21"/>
-<wire x1="-3.95" y1="3.125" x2="-3.95" y2="-3.125" width="0.05" layer="39"/>
-<wire x1="-3.95" y1="-3.125" x2="3.95" y2="-3.125" width="0.05" layer="39"/>
-<wire x1="3.95" y1="-3.125" x2="3.95" y2="3.125" width="0.05" layer="39"/>
-<wire x1="3.95" y1="3.125" x2="-3.95" y2="3.125" width="0.05" layer="39"/>
-<circle x="4.44" y="-0.525" radius="0.1" width="0.2" layer="21"/>
-<text x="-3.95" y="4.125" size="1.27" layer="25">&gt;NAME</text>
-<text x="-3.95" y="-4.125" size="1.27" layer="27" align="top-left">&gt;VALUE</text>
-<pad name="2" x="-1.25" y="-0.525" drill="1.05"/>
-<pad name="1" x="1.25" y="-0.525" drill="1.05" shape="square"/>
-</package>
-</packages>
-<symbols>
-<symbol name="B2B-XH-A">
-<wire x1="-3.81" y1="3.81" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
-<wire x1="-3.81" y1="3.81" x2="-3.81" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="-3.81" y1="-1.27" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-2.54" x2="3.81" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="3.81" y1="-2.54" x2="3.81" y2="5.08" width="0.254" layer="94"/>
-<wire x1="3.81" y1="5.08" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
-<text x="-2.54" y="6.35" size="1.778" layer="95">&gt;NAME</text>
-<text x="-2.54" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
-<rectangle x1="-3.175" y1="2.2225" x2="-1.5875" y2="2.8575" layer="94"/>
-<rectangle x1="-3.175" y1="-0.3175" x2="-1.5875" y2="0.3175" layer="94"/>
-<pin name="1" x="-7.62" y="2.54" length="middle" direction="pas"/>
-<pin name="2" x="-7.62" y="0" length="middle" direction="pas"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="B2B-XH-A" prefix="J">
-<description> &lt;a href="https://pricing.snapeda.com/parts/B2B-XH-A/JST%20Sales/view-part?ref=eda"&gt;Check availability&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="B2B-XH-A" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="JST_B2B-XH-A">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="AVAILABILITY" value="In Stock"/>
-<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/B2B-XH-A/JST+Sales+America+Inc./view-part/?ref=eda"/>
-<attribute name="DESCRIPTION" value=" Connector Header Through Hole 2 position 0.098 (2.50mm) "/>
-<attribute name="MF" value="JST Sales"/>
-<attribute name="MP" value="B2B-XH-A"/>
-<attribute name="PACKAGE" value="None"/>
-<attribute name="PRICE" value="None"/>
-<attribute name="PURCHASE-URL" value="https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=552747&amp;manufacturer=JST Sales&amp;part_name=B2B-XH-A&amp;search_term=jwt xh"/>
-<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/B2B-XH-A/JST+Sales+America+Inc./view-part/?ref=snap"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="MCP1703T-3302E_CB">
 <packages>
 <package name="SOT95P255X145-3N">
@@ -4961,6 +4892,55 @@ Source: AVX .. aphvc.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="con-JST-SH">
+<packages>
+<package name="SM02B-SRSS-TB">
+<description>JST-SH (1.25mm) 5-pin surface-mount right-angle Wire-Board Connector</description>
+<smd name="M1" x="1.8" y="0" dx="1.2" dy="1.8" layer="1"/>
+<smd name="M2" x="-1.8" y="0" dx="1.2" dy="1.8" layer="1"/>
+<smd name="1" x="-0.5" y="4.675" dx="0.6" dy="1.55" layer="1"/>
+<smd name="2" x="0.5" y="4.675" dx="0.6" dy="1.55" layer="1"/>
+<wire x1="-2" y1="-0.5" x2="2" y2="-0.5" width="0.127" layer="21"/>
+<wire x1="2" y1="-0.5" x2="2" y2="4.25" width="0.127" layer="21"/>
+<wire x1="2" y1="4.25" x2="-2" y2="4.25" width="0.127" layer="21"/>
+<wire x1="-2" y1="4.25" x2="-2" y2="-0.5" width="0.127" layer="21"/>
+<text x="0" y="6" size="0.6" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<rectangle x1="-2.25" y1="-1" x2="2.25" y2="4.5" layer="39"/>
+<rectangle x1="-2.5" y1="-6" x2="2.5" y2="-1" layer="39"/>
+</package>
+</packages>
+<symbols>
+<symbol name="PIN">
+<pin name="P" x="2.54" y="0" visible="pad" length="short" rot="R180"/>
+<text x="0" y="-0.635" size="1.016" layer="95" rot="R180" align="center-left">&gt;NAME</text>
+<wire x1="0" y1="0" x2="1.905" y2="0" width="0.508" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="SM02B-SRSS-TB" prefix="J">
+<gates>
+<gate name="-1" symbol="PIN" x="0" y="5.08" addlevel="always" swaplevel="1"/>
+<gate name="-2" symbol="PIN" x="0" y="2.54" addlevel="always" swaplevel="1"/>
+<gate name="M" symbol="PIN" x="0" y="-10.16" addlevel="request"/>
+</gates>
+<devices>
+<device name="" package="SM02B-SRSS-TB">
+<connects>
+<connect gate="-1" pin="P" pad="1"/>
+<connect gate="-2" pin="P" pad="2"/>
+<connect gate="M" pin="P" pad="M1 M2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MF" value="JST"/>
+<attribute name="MPN" value="SM02B-SRSS-TB"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -4971,8 +4951,8 @@ Source: AVX .. aphvc.pdf</description>
 </class>
 </classes>
 <parts>
-<part name="U$1" library="ESP32-WROOM-32E" deviceset="ESP32-WROOM-32E" device=""/>
-<part name="U2" library="GY-521" deviceset="GY-521" device="MPU6050"/>
+<part name="ESP" library="ESP32-WROOM-32E" deviceset="ESP32-WROOM-32E" device=""/>
+<part name="GY" library="GY-521" deviceset="GY-521" device="MPU6050"/>
 <part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="025-040X050" package3d_urn="urn:adsk.eagle:package:23634/1"/>
 <part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="025-040X050" package3d_urn="urn:adsk.eagle:package:23634/1"/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -4980,19 +4960,19 @@ Source: AVX .. aphvc.pdf</description>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
-<part name="SWITCH" library="B2B-XH-A" deviceset="B2B-XH-A" device=""/>
-<part name="U3" library="MCP1703T-3302E_CB" deviceset="MCP1703T-3302E/CB" device=""/>
+<part name="MCP" library="MCP1703T-3302E_CB" deviceset="MCP1703T-3302E/CB" device=""/>
+<part name="J1" library="con-JST-SH" deviceset="SM02B-SRSS-TB" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
-<instance part="U$1" gate="G$1" x="43.18" y="55.88" smashed="yes">
+<instance part="ESP" gate="G$1" x="43.18" y="55.88" smashed="yes">
 <attribute name="NAME" x="25.4" y="86.36" size="1.778" layer="95"/>
 <attribute name="VALUE" x="25.4" y="17.78" size="1.778" layer="96"/>
 </instance>
-<instance part="U2" gate="G$1" x="111.76" y="53.34" smashed="yes"/>
+<instance part="GY" gate="G$1" x="111.76" y="53.34" smashed="yes"/>
 <instance part="C1" gate="G$1" x="10.16" y="106.68" smashed="yes">
 <attribute name="NAME" x="11.684" y="107.061" size="1.778" layer="95"/>
 <attribute name="VALUE" x="11.684" y="101.981" size="1.778" layer="96"/>
@@ -5016,13 +4996,15 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="P+3" gate="VCC" x="20.32" y="76.2" smashed="yes">
 <attribute name="VALUE" x="17.78" y="73.66" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="SWITCH" gate="G$1" x="-27.94" y="99.06" smashed="yes" rot="R180">
-<attribute name="NAME" x="-25.4" y="92.71" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="-25.4" y="104.14" size="1.778" layer="96" rot="R180"/>
-</instance>
-<instance part="U3" gate="G$1" x="43.18" y="124.46" smashed="yes">
+<instance part="MCP" gate="G$1" x="43.18" y="124.46" smashed="yes">
 <attribute name="NAME" x="33.02" y="130.175" size="1.778" layer="95" ratio="10" rot="SR0"/>
 <attribute name="VALUE" x="33.02" y="116.84" size="1.778" layer="96" ratio="10" rot="SR0"/>
+</instance>
+<instance part="J1" gate="-1" x="-22.86" y="99.06" smashed="yes">
+<attribute name="NAME" x="-22.86" y="98.425" size="1.016" layer="95" rot="R180" align="center-left"/>
+</instance>
+<instance part="J1" gate="-2" x="-22.86" y="96.52" smashed="yes">
+<attribute name="NAME" x="-22.86" y="95.885" size="1.016" layer="95" rot="R180" align="center-left"/>
 </instance>
 </instances>
 <busses>
@@ -5037,31 +5019,31 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="10.16" y1="111.76" x2="-12.7" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="10.16" y1="109.22" x2="10.16" y2="111.76" width="0.1524" layer="91"/>
 <junction x="10.16" y="111.76"/>
-<pinref part="SWITCH" gate="G$1" pin="2"/>
 <wire x1="-20.32" y1="101.6" x2="-20.32" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="111.76" x2="25.4" y2="127" width="0.1524" layer="91"/>
-<pinref part="U3" gate="G$1" pin="VIN"/>
+<pinref part="MCP" gate="G$1" pin="VIN"/>
 <wire x1="25.4" y1="127" x2="27.94" y2="127" width="0.1524" layer="91"/>
+<pinref part="J1" gate="-1" pin="P"/>
 </segment>
 </net>
 <net name="VCC" class="0">
 <segment>
 <pinref part="C2" gate="G$1" pin="1"/>
 <pinref part="P+1" gate="VCC" pin="VCC"/>
-<pinref part="U3" gate="G$1" pin="VOUT"/>
+<pinref part="MCP" gate="G$1" pin="VOUT"/>
 <wire x1="58.42" y1="127" x2="63.5" y2="127" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="127" x2="63.5" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="111.76" x2="68.58" y2="111.76" width="0.1524" layer="91"/>
 <junction x="68.58" y="111.76"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="VDD"/>
+<pinref part="ESP" gate="G$1" pin="VDD"/>
 <wire x1="25.4" y1="66.04" x2="20.32" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="P+3" gate="VCC" pin="VCC"/>
 <wire x1="20.32" y1="66.04" x2="20.32" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U2" gate="G$1" pin="VCC"/>
+<pinref part="GY" gate="G$1" pin="VCC"/>
 <pinref part="P+2" gate="VCC" pin="VCC"/>
 <wire x1="96.52" y1="68.58" x2="93.98" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="93.98" y1="68.58" x2="93.98" y2="76.2" width="0.1524" layer="91"/>
@@ -5083,14 +5065,14 @@ Source: AVX .. aphvc.pdf</description>
 <junction x="60.96" y="91.44"/>
 <pinref part="GND1" gate="1" pin="GND"/>
 <junction x="68.58" y="91.44"/>
-<pinref part="SWITCH" gate="G$1" pin="1"/>
-<pinref part="U3" gate="G$1" pin="GND"/>
+<pinref part="MCP" gate="G$1" pin="GND"/>
 <wire x1="58.42" y1="121.92" x2="60.96" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="121.92" x2="60.96" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="J1" gate="-2" pin="P"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="GND@38"/>
-<pinref part="U2" gate="G$1" pin="GND"/>
+<pinref part="ESP" gate="G$1" pin="GND@38"/>
+<pinref part="GY" gate="G$1" pin="GND"/>
 <wire x1="96.52" y1="63.5" x2="86.36" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="63.5" x2="86.36" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="68.58" x2="63.5" y2="68.58" width="0.1524" layer="91"/>
@@ -5103,18 +5085,18 @@ Source: AVX .. aphvc.pdf</description>
 </net>
 <net name="N$8" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="IO22"/>
+<pinref part="ESP" gate="G$1" pin="IO22"/>
 <wire x1="63.5" y1="63.5" x2="81.28" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="U2" gate="G$1" pin="SCL"/>
+<pinref part="GY" gate="G$1" pin="SCL"/>
 <wire x1="96.52" y1="58.42" x2="81.28" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="58.42" x2="81.28" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$9" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="IO21"/>
+<pinref part="ESP" gate="G$1" pin="IO21"/>
 <wire x1="63.5" y1="55.88" x2="78.74" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="U2" gate="G$1" pin="SDA"/>
+<pinref part="GY" gate="G$1" pin="SDA"/>
 <wire x1="96.52" y1="53.34" x2="78.74" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="53.34" x2="78.74" y2="55.88" width="0.1524" layer="91"/>
 </segment>
