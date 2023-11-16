@@ -1,21 +1,4 @@
 
-// void setup(void) {
-//   Serial.begin(115200);
-//   setupMPU(); 
-// }
-
-// // leher ke depan minimal 14
-// // 
-
-// void loop() {
-//   /* Get new sensor events with the readings */
-
-//   mpu.getEvent(&a, &g, &temp);
-
-//   convertAccelerationToPitchAndRoll(a.acceleration);
-// }
-
-
 void setup(void) {
   Serial.begin(115200);
   while (!Serial)
@@ -48,7 +31,6 @@ void loop() {
       }
       break;
     case DANGEROUS_STATE:
-        // Serial.println("danger");
         danger_duration = (float)(millis() - danger_timer_start)/1000.0; // in ms
         if(roll < dangerousNeckAngle){
           neck_state = INTERMEDIATE_STATE;
@@ -61,6 +43,8 @@ void loop() {
     sendData();
     sendStateAndDurationData();
   }
+
+  
 
   delay(50);
 }

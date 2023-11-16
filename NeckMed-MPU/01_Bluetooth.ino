@@ -1,6 +1,3 @@
-// #include "BluetoothSerial.h"
-
-
 #include <string>
 using namespace std;
 
@@ -82,11 +79,7 @@ void setupBLE() {
 //
 
 void sendData() {
-  // string data = std::format("Pitch: {}\tRoll: {}", pitch, roll);
-  // Serial.println("data: " + data);
   string data = to_string(pitch) + " " + to_string(roll);
-  // Serial.println(data.c_str());
-  // pCharacteristic->setValue("neckmed-gblg");
   pCharacteristic->setValue(data);
   pCharacteristic->notify();
 }
