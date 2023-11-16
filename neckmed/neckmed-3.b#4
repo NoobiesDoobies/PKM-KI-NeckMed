@@ -134,17 +134,17 @@
 <layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <board>
-<fusionsync huburn="a.YnVzaW5lc3M6bWFoYXNpc3dhNDI0" projecturn="a.YnVzaW5lc3M6bWFoYXNpc3dhNDI0I0QyMDIyMTIxNDU4OTAwODgzMQ" f3durn="urn:adsk.wipprod:dm.lineage:_axvze4nTT61HB59BnFJ_g" pcbguid="" lastpulledtime="" lastsyncedchangeguid="" latestrevisionid="1f06b47e-e781-459a-9d7f-a622f0fc035f" lastsyncedrevisionid="1f06b47e-e781-459a-9d7f-a622f0fc035f" lastboardhashguid="e72b889e-2fc3-c261-fdbe-120f8a678675" lastpushedtime="2023-11-15T12:37:37Z" linktopcb3d="false"/>
+<fusionsync huburn="a.YnVzaW5lc3M6bWFoYXNpc3dhNDI0" projecturn="a.YnVzaW5lc3M6bWFoYXNpc3dhNDI0I0QyMDIyMTIxNDU4OTAwODgzMQ" f3durn="urn:adsk.wipprod:dm.lineage:9qbVsWR5S3u4szxcWO2Kvw" pcbguid="" lastpulledtime="" lastsyncedchangeguid="" latestrevisionid="d6840d3a-f62d-4d67-9780-f0adb8825513" lastsyncedrevisionid="d6840d3a-f62d-4d67-9780-f0adb8825513" lastboardhashguid="15ec8045-7b06-422a-b9db-df8396409d96" lastpushedtime="2023-11-16T14:10:21Z" linktopcb3d="true"/>
 <plain>
-<wire x1="0" y1="-0.45" x2="41.75" y2="-0.45" width="0" layer="20"/>
-<wire x1="41.75" y1="-0.45" x2="41.75" y2="26.5" width="0" layer="20"/>
+<wire x1="0" y1="-0.2" x2="41.75" y2="-0.2" width="0" layer="20"/>
+<wire x1="41.75" y1="-0.2" x2="41.75" y2="26.5" width="0" layer="20"/>
 <wire x1="41.75" y1="26.5" x2="0" y2="26.5" width="0" layer="20"/>
-<wire x1="0" y1="26.5" x2="0" y2="-0.45" width="0" layer="20"/>
+<wire x1="0" y1="26.5" x2="0" y2="-0.2" width="0" layer="20"/>
 <hole x="2" y="24.75" drill="3"/>
 <dimension x1="0" y1="0.05" x2="42" y2="0.05" x3="21" y3="-6" textsize="1.778" layer="16"/>
 <dimension x1="0" y1="25" x2="0" y2="0.05" x3="-7" y3="12.525" textsize="1.778" layer="16"/>
-<hole x="39.5" y="24.75" drill="3"/>
-<hole x="2" y="1.5" drill="3"/>
+<hole x="40" y="24.75" drill="3"/>
+<hole x="2" y="1.75" drill="3"/>
 </plain>
 <libraries>
 <library name="ESP32-WROOM-32E">
@@ -634,17 +634,17 @@ design rules under a new name.</description>
 <attribute name="PRICE" value="None" x="23.25" y="13" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/GY-521/GODREAM+FORDREAM+CO.%252C+LIMITED/view-part/?ref=snap" x="23.25" y="13" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="CHARGER" library="B2B-XH-A" package="JST_B2B-XH-A" value="B2B-XH-A" x="12.25" y="24.75" smashed="yes" rot="MR0">
-<attribute name="AVAILABILITY" value="In Stock" x="12.25" y="24.75" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/B2B-XH-A/JST+Sales+America+Inc./view-part/?ref=eda" x="12.25" y="24.75" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="DESCRIPTION" value=" Connector Header Through Hole 2 position 0.098 (2.50mm) " x="12.25" y="24.75" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="MF" value="JST Sales" x="12.25" y="24.75" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="MP" value="B2B-XH-A" x="12.25" y="24.75" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="PACKAGE" value="None" x="12.25" y="24.75" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="PRICE" value="None" x="12.25" y="24.75" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="PURCHASE-URL" value="https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=552747&amp;manufacturer=JST Sales&amp;part_name=B2B-XH-A&amp;search_term=jwt xh" x="12.25" y="24.75" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/B2B-XH-A/JST+Sales+America+Inc./view-part/?ref=snap" x="12.25" y="24.75" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="VALUE" x="15.2" y="27.625" size="1.27" layer="28" rot="MR0" align="top-left"/>
+<element name="CHARGER" library="B2B-XH-A" package="JST_B2B-XH-A" value="B2B-XH-A" x="13.5" y="24.5" smashed="yes" rot="MR0">
+<attribute name="AVAILABILITY" value="In Stock" x="13.5" y="24.5" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/B2B-XH-A/JST+Sales+America+Inc./view-part/?ref=eda" x="13.5" y="24.5" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="DESCRIPTION" value=" Connector Header Through Hole 2 position 0.098 (2.50mm) " x="13.5" y="24.5" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MF" value="JST Sales" x="13.5" y="24.5" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MP" value="B2B-XH-A" x="13.5" y="24.5" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="PACKAGE" value="None" x="13.5" y="24.5" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="PRICE" value="None" x="13.5" y="24.5" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="PURCHASE-URL" value="https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=552747&amp;manufacturer=JST Sales&amp;part_name=B2B-XH-A&amp;search_term=jwt xh" x="13.5" y="24.5" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/B2B-XH-A/JST+Sales+America+Inc./view-part/?ref=snap" x="13.5" y="24.5" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="VALUE" x="16.45" y="27.375" size="1.27" layer="28" rot="MR0" align="top-left"/>
 </element>
 <element name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X02" package3d_urn="urn:adsk.eagle:package:22435/2" value="" x="38" y="9" smashed="yes">
 <attribute name="NAME" x="35.3838" y="10.8288" size="1.27" layer="25" ratio="10"/>
@@ -742,7 +742,6 @@ design rules under a new name.</description>
 </signal>
 <signal name="GND">
 <contactref element="U2" pad="GND"/>
-<contactref element="CHARGER" pad="1"/>
 <contactref element="JP1" pad="2"/>
 <wire x1="29.5" y1="2.75" x2="29.5" y2="5" width="0.508" layer="16"/>
 <contactref element="C3" pad="2"/>
@@ -757,29 +756,19 @@ design rules under a new name.</description>
 <wire x1="39.27" y1="8.38394375" x2="41" y2="6.65394375" width="0.508" layer="16"/>
 <wire x1="41.0704" y1="4.3604" x2="39.5" y2="2.79" width="0.508" layer="16"/>
 <wire x1="41.0704" y1="6.58354375" x2="41.0704" y2="4.3604" width="0.508" layer="16"/>
-<contactref element="LED1" pad="K"/>
 <wire x1="29.5" y1="5" x2="31.15" y2="6.65" width="0.508" layer="16"/>
 <wire x1="31.15" y1="6.65" x2="32.14" y2="6.65" width="0.508" layer="16"/>
 <contactref element="U$1" pad="38"/>
-<contactref element="SW" pad="2"/>
-<wire x1="41" y1="21.03394375" x2="39.78394375" y2="22.25" width="0.508" layer="16"/>
-<wire x1="38.775" y1="22.25" x2="39.78394375" y2="22.25" width="0.508" layer="16"/>
 <wire x1="41" y1="6.65394375" x2="41.0704" y2="6.58354375" width="0.508" layer="16"/>
-<wire x1="41" y1="21.03394375" x2="41" y2="6.65394375" width="0.508" layer="16"/>
+<wire x1="41" y1="17.525" x2="41" y2="6.65394375" width="0.508" layer="16"/>
 <wire x1="7.745" y1="3.8" x2="7.9046" y2="3.6404" width="0.508" layer="16"/>
 <wire x1="7.9046" y1="3.6404" x2="7.9046" y2="2.77645625" width="0.508" layer="16"/>
 <wire x1="7.9046" y1="2.77645625" x2="9.36105625" y2="1.32" width="0.508" layer="16"/>
 <wire x1="9.36105625" y1="1.32" x2="30.93" y2="1.32" width="0.508" layer="16"/>
-<wire x1="36" y1="25.8396" x2="37.3396" y2="24.5" width="0.508" layer="16"/>
-<wire x1="37.3396" y1="24.5" x2="37.3396" y2="22.85513125" width="0.508" layer="16"/>
-<wire x1="38.775" y1="22.25" x2="37.94473125" y2="22.25" width="0.508" layer="16"/>
-<wire x1="37.94473125" y1="22.25" x2="37.3396" y2="22.85513125" width="0.508" layer="16"/>
-<wire x1="7.52" y1="24.25" x2="7.545" y2="24.225" width="0.508" layer="16"/>
-<wire x1="7.545" y1="24.225" x2="11" y2="24.225" width="0.508" layer="16"/>
-<wire x1="11" y1="24.225" x2="11.45235625" y2="24.225" width="0.508" layer="16"/>
-<wire x1="11.45235625" y1="24.225" x2="12.90025625" y2="25.6729" width="0.508" layer="16"/>
-<wire x1="35.8333" y1="25.6729" x2="36" y2="25.8396" width="0.508" layer="16"/>
-<wire x1="12.90025625" y1="25.6729" x2="35.8333" y2="25.6729" width="0.508" layer="16"/>
+<contactref element="U1" pad="1"/>
+<contactref element="SW" pad="1"/>
+<wire x1="38.775" y1="19.75" x2="41" y2="17.525" width="0.508" layer="16"/>
+<wire x1="39.27" y1="9" x2="39.5" y2="11.85" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$8">
 <contactref element="U$1" pad="36"/>
@@ -816,18 +805,26 @@ design rules under a new name.</description>
 <wire x1="36.73" y1="9" x2="36.73" y2="9.73" width="0.508" layer="16"/>
 <wire x1="38.005" y1="11.005" x2="38.005" y2="13.75" width="0.508" layer="16"/>
 <wire x1="36.73" y1="9.73" x2="38.005" y2="11.005" width="0.508" layer="16"/>
-<wire x1="35" y1="24.225" x2="36" y2="23.225" width="0.508" layer="16"/>
+<wire x1="35.25" y1="23.975" x2="36" y2="23.225" width="0.508" layer="16"/>
 <wire x1="38.005" y1="14.995" x2="38.005" y2="13.75" width="0.508" layer="16"/>
 <wire x1="36" y1="23.225" x2="36" y2="17" width="0.508" layer="16"/>
 <wire x1="36" y1="17" x2="38.005" y2="14.995" width="0.508" layer="16"/>
-<wire x1="13.5" y1="24.225" x2="35" y2="24.225" width="0.508" layer="16"/>
+<wire x1="14.75" y1="23.975" x2="35.25" y2="23.975" width="0.508" layer="16"/>
 </signal>
 <signal name="N$2">
-<contactref element="U1" pad="1"/>
-<contactref element="SW" pad="1"/>
-<wire x1="38.775" y1="19.75" x2="39.912575" y2="18.612425" width="0.508" layer="16"/>
-<wire x1="39.912575" y1="12.262575" x2="39.5" y2="11.85" width="0.508" layer="16"/>
-<wire x1="39.912575" y1="18.612425" x2="39.912575" y2="12.262575" width="0.508" layer="16"/>
+<contactref element="CHARGER" pad="1"/>
+<wire x1="35.9167" y1="25.4229" x2="37.3396" y2="24" width="0.508" layer="16"/>
+<wire x1="37.3396" y1="24" x2="37.3396" y2="22.85513125" width="0.508" layer="16"/>
+<wire x1="12.25" y1="23.975" x2="12.25" y2="24.02264375" width="0.508" layer="16"/>
+<wire x1="12.25" y1="24.02264375" x2="13.65025625" y2="25.4229" width="0.508" layer="16"/>
+<wire x1="13.65025625" y1="25.4229" x2="35.9167" y2="25.4229" width="0.508" layer="16"/>
+<contactref element="SW" pad="2"/>
+<wire x1="37.94473125" y1="22.25" x2="38.775" y2="22.25" width="0.508" layer="16"/>
+<wire x1="37.3396" y1="22.85513125" x2="37.94473125" y2="22.25" width="0.508" layer="16"/>
+<contactref element="LED1" pad="K"/>
+<wire x1="12.25" y1="23.975" x2="11.8" y2="23.975" width="0.508" layer="16"/>
+<wire x1="11.8" y1="23.975" x2="11.525" y2="24.25" width="0.508" layer="16"/>
+<wire x1="11.525" y1="24.25" x2="7.52" y2="24.25" width="0.508" layer="16"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
