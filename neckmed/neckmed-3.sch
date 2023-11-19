@@ -328,14 +328,14 @@
 <text x="1.905" y="-8.89" size="1.27" layer="21">x</text>
 <text x="-1.27" y="-5.08" size="1.27" layer="21">y</text>
 <text x="3.81" y="-1.27" size="1.27" layer="21" rot="R90">ITG/MPU</text>
-<pad name="SDA" x="-8.89" y="1.27" drill="0.8" diameter="1.778" shape="long"/>
-<pad name="XDA" x="-8.89" y="-1.27" drill="0.8" diameter="1.778" shape="long"/>
-<pad name="SCL" x="-8.89" y="3.81" drill="0.8" diameter="1.778" shape="long"/>
-<pad name="GND" x="-8.89" y="6.35" drill="0.8" diameter="1.778" shape="long"/>
-<pad name="VCC" x="-8.89" y="8.89" drill="0.8" diameter="1.778" shape="long"/>
-<pad name="XCL" x="-8.89" y="-3.81" drill="0.8" diameter="1.778" shape="long"/>
-<pad name="ADO" x="-8.89" y="-6.35" drill="0.8" diameter="1.778" shape="long"/>
-<pad name="INT" x="-8.89" y="-8.89" drill="0.8" diameter="1.778" shape="long"/>
+<pad name="SDA" x="-8.89" y="1.27" drill="1.143" diameter="1.778" shape="long"/>
+<pad name="XDA" x="-8.89" y="-1.27" drill="1.143" diameter="1.778" shape="long"/>
+<pad name="SCL" x="-8.89" y="3.81" drill="1.143" diameter="1.778" shape="long"/>
+<pad name="GND" x="-8.89" y="6.35" drill="1.143" diameter="1.778" shape="long"/>
+<pad name="VCC" x="-8.89" y="8.89" drill="1.143" diameter="1.778" shape="long"/>
+<pad name="XCL" x="-8.89" y="-3.81" drill="1.143" diameter="1.778" shape="long"/>
+<pad name="ADO" x="-8.89" y="-6.35" drill="1.143" diameter="1.778" shape="long"/>
+<pad name="INT" x="-8.89" y="-8.89" drill="1.143" diameter="1.778" shape="long"/>
 </package>
 </packages>
 <symbols>
@@ -471,7 +471,7 @@
 <circle x="4.44" y="-0.525" radius="0.1" width="0.2" layer="21"/>
 <text x="-3.95" y="4.125" size="1.27" layer="25">&gt;NAME</text>
 <text x="-3.95" y="-4.125" size="1.27" layer="27" align="top-left">&gt;VALUE</text>
-<pad name="2" x="-1.25" y="-0.525" drill="1.05"/>
+<pad name="2" x="-1.25" y="-0.525" drill="1.05" shape="square"/>
 <pad name="1" x="1.25" y="-0.525" drill="1.05" shape="square"/>
 </package>
 </packages>
@@ -512,7 +512,7 @@
 <attribute name="MP" value="B2B-XH-A"/>
 <attribute name="PACKAGE" value="None"/>
 <attribute name="PRICE" value="None"/>
-<attribute name="PURCHASE-URL" value="https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=552747&amp;manufacturer=JST Sales&amp;part_name=B2B-XH-A&amp;search_term=jwt xh"/>
+<attribute name="PURCHASE-URL" value="https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=552747&amp;manufacturer=JST Sales&amp;part_name=B2B-XH-A&amp;search_term=b2bxh-a"/>
 <attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/B2B-XH-A/JST+Sales+America+Inc./view-part/?ref=snap"/>
 </technology>
 </technologies>
@@ -793,12 +793,12 @@
 </deviceset>
 </devicesets>
 </library>
-<library name="led" urn="urn:adsk.eagle:library:259">
+<library name="led">
 <description>&lt;b&gt;LEDs&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;&lt;br&gt;
 Extended by Federico Battaglin &lt;author&gt;&amp;lt;federico.rd@fdpinternational.com&amp;gt;&lt;/author&gt; with DUOLED</description>
 <packages>
-<package name="LED3MM" urn="urn:adsk.eagle:footprint:15654/1" library_version="5">
+<package name="LED3MM" urn="urn:adsk.eagle:footprint:15654/1" locally_modified="yes">
 <description>&lt;B&gt;LED&lt;/B&gt;&lt;p&gt;
 3 mm, round</description>
 <wire x1="1.5748" y1="-1.27" x2="1.5748" y2="1.27" width="0.254" layer="51"/>
@@ -820,14 +820,14 @@ Extended by Federico Battaglin &lt;author&gt;&amp;lt;federico.rd@fdpinternationa
 <wire x1="-1.7643" y1="-1.0082" x2="0" y2="-2.032" width="0.254" layer="21" curve="60.255215"/>
 <wire x1="-2.032" y1="0" x2="-1.7891" y2="0.9634" width="0.254" layer="51" curve="-28.301701"/>
 <wire x1="-2.032" y1="0" x2="-1.7306" y2="-1.065" width="0.254" layer="51" curve="31.60822"/>
-<pad name="A" x="-1.27" y="0" drill="0.8128" shape="octagon"/>
-<pad name="K" x="1.27" y="0" drill="0.8128" shape="octagon"/>
+<pad name="A" x="-1.27" y="0" drill="1" shape="square"/>
+<pad name="K" x="1.27" y="0" drill="1" shape="square"/>
 <text x="1.905" y="0.381" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="1.905" y="-1.651" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
 </packages>
 <packages3d>
-<package3d name="LED3MM" urn="urn:adsk.eagle:package:15797/1" type="box" library_version="5">
+<package3d name="LED3MM" urn="urn:adsk.eagle:package:15797/1" type="box">
 <description>LED
 3 mm, round</description>
 <packageinstances>
@@ -836,7 +836,7 @@ Extended by Federico Battaglin &lt;author&gt;&amp;lt;federico.rd@fdpinternationa
 </package3d>
 </packages3d>
 <symbols>
-<symbol name="LED" urn="urn:adsk.eagle:symbol:15639/2" library_version="5">
+<symbol name="LED">
 <wire x1="1.27" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="0" y1="-2.54" x2="-1.27" y2="0" width="0.254" layer="94"/>
 <wire x1="1.27" y1="-2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
@@ -862,7 +862,7 @@ Extended by Federico Battaglin &lt;author&gt;&amp;lt;federico.rd@fdpinternationa
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="TLLR4400" urn="urn:adsk.eagle:component:15908/3" prefix="LED" library_version="5">
+<deviceset name="TLLR4400" prefix="LED">
 <description>&lt;b&gt;Low Current (2mA) LED 3 mm Tinted Diffused Package&lt;/b&gt; color &lt;b&gt;&lt;font color="darkred"&gt;RED&lt;/font&gt;&lt;/b&gt;&lt;p&gt;
 Source: &lt;a href="http://www.farnell.com/datasheets/391100.pdf"&gt; Data sheet&lt;/a&gt;</description>
 <gates>
@@ -942,12 +942,11 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="CHARGER" library="B2B-XH-A" deviceset="B2B-XH-A" device=""/>
-<part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
 <part name="C3" library="CL31B106KAHNNNE" deviceset="CL31B106KAHNNNE" device=""/>
 <part name="C1" library="CL31B106KAHNNNE" deviceset="CL31B106KAHNNNE" device=""/>
 <part name="U1" library="HT7333" deviceset="HT7333" device=""/>
-<part name="LED1" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="TLLR4400" device="" package3d_urn="urn:adsk.eagle:package:15797/1"/>
+<part name="LED1" library="led" deviceset="TLLR4400" device="" package3d_urn="urn:adsk.eagle:package:15797/1"/>
 <part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="P+6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="SUPPLY2" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
@@ -981,9 +980,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <instance part="CHARGER" gate="G$1" x="-20.32" y="101.6" smashed="yes" rot="R180">
 <attribute name="NAME" x="-17.78" y="95.25" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="-17.78" y="106.68" size="1.778" layer="96" rot="R180"/>
-</instance>
-<instance part="P+4" gate="VCC" x="86.36" y="43.18" smashed="yes">
-<attribute name="VALUE" x="83.82" y="40.64" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="JP1" gate="G$1" x="5.08" y="99.06" smashed="yes">
 <attribute name="NAME" x="-1.27" y="104.775" size="1.778" layer="95"/>
@@ -1041,12 +1037,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <pinref part="P+2" gate="VCC" pin="VCC"/>
 <wire x1="96.52" y1="68.58" x2="93.98" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="93.98" y1="68.58" x2="93.98" y2="76.2" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="U2" gate="G$1" pin="ADO"/>
-<wire x1="96.52" y1="38.1" x2="86.36" y2="38.1" width="0.1524" layer="91"/>
-<pinref part="P+4" gate="VCC" pin="VCC"/>
-<wire x1="86.36" y1="38.1" x2="86.36" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="P+5" gate="VCC" pin="VCC"/>
