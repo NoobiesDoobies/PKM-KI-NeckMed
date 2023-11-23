@@ -44,7 +44,7 @@ void loop() {
     // Serial.println(pCharacteristic->getValue().c_str());
     // Serial.println(pStateAndDurationCharacteristic->getValue().c_str());
     sendData();
-    sendStateAndDurationData();
+    // sendStateAndDurationData();
   }
 
   delay(200);
