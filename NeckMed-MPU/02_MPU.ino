@@ -71,7 +71,6 @@ void setupMPU(){
 
   Serial.println("");
   delay(100);
-
 }
 
 float getPitch(){
@@ -83,8 +82,6 @@ float getPitch(){
 
   return tempPitch;
 }
-
-
 
 float getRoll(){
   mpu.getEvent(&a, &g, &temp);

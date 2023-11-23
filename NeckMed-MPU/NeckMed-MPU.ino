@@ -24,14 +24,14 @@ float pitchOffset = 0.0;
 /* Get new sensor events with the readings */
 sensors_event_t a, g, temp;
 
-const int dangerousNeckAngle = 30;
+const int dangerousNeckAngle = 19;
 
 
 enum Neck_State{SAFE_STATE, INTERMEDIATE_STATE, DANGEROUS_STATE};
 int neck_state = SAFE_STATE;
 int danger_timer_start = 0;
 float danger_duration = 0;
-const int MINIMAL_STRETCH_DURATION = 3*1000; // in ms
+const int MINIMAL_STRETCH_DURATION = 10*1000; // in ms
 int stretch_timer_start = 0;
 
 float convertAccelerationToPitch(sensors_vec_t accel){
