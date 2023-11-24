@@ -4,8 +4,9 @@ void setup(void) {
     delay(10); // will pause Zero, Leonardo, etc until serial console opens
 
 
-  setupMPU();
   setupBLE();
+  setupMPU();
+
 } 
 
 void loop() {
